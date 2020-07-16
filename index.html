@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/cjs/popper-lite.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">BREAKING NEWS</a>
+        <form class="form-inline">
+            <input id="keywordArea" class="form-control mr-sm-2" type="search" placeholder="Enter a keyword"
+                aria-label="Search">
+            <button onclick="searchButton()" id="searchBtn" class="btn btn-secondary rounded-right"><i
+                    class="fas fa-search"></i></button>
+        </form>
+    </nav>
+
+
+
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="btn-group dropright">
+                <button style="margin-left: 20px;" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a onclick="allDrop()" id="allDrop" class="dropdown-item" href="#">All</a>
+                    <a onclick="businessDrop()" id="businessDrop" class="dropdown-item" href="#">Business</a>
+                    <a onclick="entertainmentDrop()" id="entertainmentDrop" class="dropdown-item"
+                        href="#">Entertainment</a>
+
+                    <a onclick="healthDrop()" id="healthDrop" class="dropdown-item" href="#">Health</a>
+                    <a onclick="scienceDrop()" id="scienceDrop" class="dropdown-item" href="#">Science</a>
+                    <a onclick="sportsDrop()" id="sportsDrop" class="dropdown-item" href="#">Sports</a>
+                    <a onclick="technologyDrop()" id="technologyDrop" class="dropdown-item" href="#">Technology</a>
+                </div>
+            </div>
+            <br></br>
+            <div>
+                <select class="" id="sourcesList">
+                    <option value="">Argentina</option>
+                    <option value="VND">Australia</option>
+                    <option value="KRW">Australia</option>
+                    <option value="EUR">Belgium</option>
+                    <option value="">Brazil</option>
+                    <option value="">Bulgaria</option>
+                    <option value="">Canada</option>
+                    <option value="">China</option>
+                    <option value="">Colombia</option>
+                    <option value="">Cuba</option>
+                    <option value="">Czech Republic</option>
+                    <option value="">Egypt</option>
+                    <option value="">France</option>
+                    <option value="">Germany</option>
+                    <option value="">Greech</option>
+                    <option value="">Hong Kong</option>
+                    <option value="">Hungary</option>
+                    <option value="">India</option>
+                  </select>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="row" id="newsListArea">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button onclick="moreButton()" class="morebutton"
+        style="float: right; margin-right: 30px; margin-bottom: 20px;">More articles</button>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
